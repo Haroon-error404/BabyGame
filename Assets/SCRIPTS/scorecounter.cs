@@ -22,7 +22,7 @@ public class scorecounter : MonoBehaviour
          int seconds = Mathf.FloorToInt(elapsedtime % 60);
          timertext.text = string.Format( "{0:00} : {1:00}" , minutes , seconds);
 
-         if(imagepic.fillAmount == 0.5f && elapsedtime == 0){
+         if(imagepic.fillAmount == 1){
             SceneManager.LoadScene("winScreen");
          }
 

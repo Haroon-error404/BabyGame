@@ -10,7 +10,7 @@ public class TPP_Controller : MonoBehaviour
 
     public float speed = 6;
     public float gravity = -9.81f;
-    public float jumpHeight = 2f; 
+
     
     Vector3 velocity;
     bool isGrounded;
@@ -25,19 +25,6 @@ public class TPP_Controller : MonoBehaviour
     
     void Update()
     {
-        //jump
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
-        if (isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f;
-        }
-
-        if (isGrounded && Input.GetButtonDown("Jump")) 
-        {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); 
-        }
-
         
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);

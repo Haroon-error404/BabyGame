@@ -6,6 +6,9 @@ TagManager:
   tags:
   - house
   - ground
+  - toptrash
+  - middletrash
+  - bottomtrash
   layers:
   - Default
   - TransparentFX

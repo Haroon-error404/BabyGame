@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 public class LOOSEWALESCRIPT : MonoBehaviour
 {
     public void looseplayagain(){
-        SceneManager.LoadScene("level3");
+        SceneManager.LoadScene("level 3");
+    }
+    public void looseplayagain2(){
+        SceneManager.LoadScene("level4");
+    }
+    public void looseplayagain3(){
+        SceneManager.LoadScene("level5");
     }
 
     

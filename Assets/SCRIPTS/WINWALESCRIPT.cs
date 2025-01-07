@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class WINWALESCRIPT : MonoBehaviour
 {
     public void nextlevel(){
-        SceneManager.LoadScene("main");
+        SceneManager.LoadScene("level4");
     }
+    public void nextlevel1(){
+        SceneManager.LoadScene("level5");
+    }
+    
 
     
     public void nextquitgame(){
